@@ -1,5 +1,5 @@
 module.exports.reversePlusOne = function(array) {
-  array.reverse().splice(0,0,1);
+  array.reverse().unshift(1);
   return array;
 };
 
