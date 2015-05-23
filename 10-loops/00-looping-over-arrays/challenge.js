@@ -1,5 +1,27 @@
-module.exports.sumNumbers = undefined;
+module.exports.sumNumbers = function (array) {
 
-module.exports.splitAndLowerCaseString = undefined;
+  var sumOfAll = 0;
 
-module.exports.addIndex = undefined;
+  for (var i = 0; i < array.length; i++) {
+  sumOfAll += array[i]
+  }
+
+  return sumOfAll;
+};
+
+module.exports.splitAndLowerCaseString = function(inputString) {
+
+  return inputString.toLowerCase().split(","); 
+};
+
+  
+module.exports.addIndex = function (array) {
+
+  var newArray = [];
+
+  for (var i = 0; i < array.length; i++) {
+  newArray.push(i + " is " + array[i]);
+  }
+
+  return newArray;
+};
